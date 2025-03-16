@@ -1,5 +1,5 @@
-
 import React, { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 const Hero: React.FC = () => {
   const headingRef = useRef<HTMLHeadingElement>(null);
@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
       >
         <span className="text-steelgray font-medium">Blockchain</span>
         <span className="mx-1 text-white/70">•</span>
-        <span className="text-white/90">Scholarship Platform</span>
+        <span className="text-white/90">Education Platform</span>
       </div>
       
       <h1 
@@ -50,9 +50,9 @@ const Hero: React.FC = () => {
         className="opacity-0 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 mx-auto"
         style={{ animationDelay: '0.4s' }}
       >
-        <span className="text-white inline-block relative after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-steelgray/30 after:bottom-0 after:left-0">Empowering Education</span>
+        <span className="text-white inline-block relative after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-steelgray/30 after:bottom-0 after:left-0">Empowering education<br></br> </span>
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-steelgray relative">
-             <br></br>through <span className="text-steelgray animate-pulse-subtle">Blockchain.</span>
+          through <span className="text-steelgray animate-pulse-subtle">blockchain.</span>
         </span>
       </h1>
       
@@ -69,12 +69,12 @@ const Hero: React.FC = () => {
         className="opacity-0 flex flex-wrap justify-center gap-4"
         style={{ animationDelay: '0.8s' }}
       >
-        <button className="btn-primary animate-glow-pulse">
+        <Link to="/find-scholarship" className="btn-primary animate-glow-pulse">
           Find Scholarship
-        </button>
-        <button className="btn-secondary">
+        </Link>
+        <Link to="/give-scholarship" className="btn-secondary">
           Give Scholarship
-        </button>
+        </Link>
       </div>
     </section>
   );

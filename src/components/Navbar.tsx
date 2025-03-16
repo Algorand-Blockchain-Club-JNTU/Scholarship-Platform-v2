@@ -80,9 +80,6 @@ const Navbar: React.FC = () => {
             About Us
           </a>
           <div className="pt-3 space-y-3">
-            <button className="w-full py-3 border border-textgray/30 rounded-md text-textgray hover:text-white hover:border-white transition-colors duration-300">
-              Sign In
-            </button>
             <button className="w-full btn-primary">
               Connect Wallet
             </button>
