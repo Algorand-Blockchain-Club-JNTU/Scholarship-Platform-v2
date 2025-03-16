@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
         className="opacity-0 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 mx-auto"
         style={{ animationDelay: '0.4s' }}
       >
-        <span className="text-white inline-block relative after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-steelgray/30 after:bottom-0 after:left-0">Empowering education<br></br> </span>
+        <span className="text-white inline-block relative after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-steelgray/30 after:bottom-0 after:left-0">Empowering education</span><br></br>
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-steelgray relative">
           through <span className="text-steelgray animate-pulse-subtle">blockchain.</span>
         </span>
